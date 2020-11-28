@@ -1,15 +1,19 @@
 <?php
 
-$con=@mysql_connect("localhost","root","") or die(mysql_error());
-$db=@mysql_select_db("onlinempa",$con)or die(mysql_error());
+$con = new mysqli("localhost","root","root","onlinempa");
 
-$sql="SELECT * FROM reg WHERE email='$_POST[email]' and password='$_POST[password]'";
+$sm=$con->prepare("SELECT * FROM reg WHERE email=? and password=?");
+$sm-> bind_param('ss',$_POST["email"],$_POST["password"]);
 
-$result=mysql_query($sql);
+$sm ->execute();
 
-$count=mysql_num_rows($result);
+$sm -> store_result();
 
-if($count<1){echo "Wrong Username or Password";
+
+
+
+if($sm ->num_rows< 1 ){
+	echo "Wrong Username or Password";
             include("plogin.php");}
 else
 	{
