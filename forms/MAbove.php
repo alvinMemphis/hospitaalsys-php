@@ -68,8 +68,9 @@
           
           
              <?php
- $con=mysql_connect("localhost","root","");
- mysql_select_db("onlinempa",$con);
+             require_once dirname(__FILE__).'../DBConnect.php';
+             $con=new DbConnect();
+             $con->connect();
 // Check connection
 if(!$con)
 {

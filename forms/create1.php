@@ -27,19 +27,23 @@ echo"</head>";
 $link ="<a href ='../plogin.php' class='b'>LOGIN</a>";
 
 if(isset($_POST['submit'])){
-require"connect.php";
+    require_once './registerUser2.php';
 
-$uname = $_POST['uname'];
-$email= $_POST['email'];
-$password= $_POST['password'];
-$retypepassword= $_POST['retypepassword'];
-$age=$_POST['age'];
-//$gender =$_POST['gender'];
-
-
-$sql="INSERT INTO reg (uname,email,password,retypepassword,age)
-VALUES
-('$uname','$email','$password','$retypepassword','$age')";
+//$uname = $_POST['uname'];
+//$email= $_POST['email'];
+//$password= $_POST['password'];
+//$retypepassword= $_POST['retypepassword'];
+//$age=$_POST['age'];
+////$gender =$_POST['gender'];
+//
+//    $db=new DbOperations();
+//    if($db->createUser($_POST['email'],$_POST['password'])){
+//
+//    }
+//
+//$sql="INSERT INTO reg (uname,email,password,retypepassword,age)
+//VALUES
+//('$uname','$email','$password','$retypepassword','$age')";
 
 
 /*$sql="INSERT INTO  reg (`uname`,`email`,`password`,`retypepassword`,`age`) 
@@ -47,19 +51,19 @@ VALUES ('$_POST[uname]','$_POST[email]','$_POST[password]','$_POST[retypepasswor
 )"; */
 
 
-if (!mysql_query($sql,$con))
- {
-  die('Error: '.mysql_error());
-  }
-    echo"Added";
-    include('pa.php'); /*
-    echo"<div class='input-group'>";
-    echo"THANK YOU ACCOUNT HAS BEEN CREATED CLICK TO LOGIN <br/>";
-echo "$link";
-   echo"</div>";
-   
-   */
-mysql_close($con);
+//if (!mysql_query($sql,$con))
+// {
+//  die('Error: '.mysql_error());
+//  }
+//    echo"Added";
+//    include('pa.php'); /*
+//    echo"<div class='input-group'>";
+//    echo"THANK YOU ACCOUNT HAS BEEN CREATED CLICK TO LOGIN <br/>";
+//echo "$link";
+//   echo"</div>";
+//
+//   */
+//mysql_close($con);
 
 
 }

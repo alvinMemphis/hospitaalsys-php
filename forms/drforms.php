@@ -62,7 +62,7 @@ font-weight:300; color: #fff }
         
         
         
-         <h2><span class='blue'>ONLINE </span>MEDICAL PRESCRIPTION ASSISTANT</h2><br/>
+         <h2><span class='blue'>     </span>MEDICAL PRESCRIPTION ASSISTANT</h2><br/>
         
         
       <h4>Select Prescription From To Update</h4>
@@ -76,9 +76,9 @@ font-weight:300; color: #fff }
               <option>Malaria</option>
               <option>Tuberculosis </option>
             <option>Typhoid</option>
-             <option>Hepatics_B</option>  
+             <option>Hepatitis B</option>
                <option>Dysentery</option>
-               <option>Influencer </option>
+               <option>Influenza </option>
                <option>U.T.I</option>
                <option>Peptic_Ulcer</option>
                <option>Food_Poisoning</option>
@@ -88,7 +88,7 @@ font-weight:300; color: #fff }
                <option>Pyelonephritis</option>
                <option>P.I.D </option>
               <!-- <option>Dehydration</option>
-               <option>Diabets_Melitus</option>
+               <option>Diabetes_Melitus</option>
                <option>Diarrhea</option>
                <option>Drug_Abuse</option>
                <option>Eye_Problem</option>
@@ -167,8 +167,6 @@ font-weight:300; color: #fff }
             <option>38</option>
             <option>39</option>
             <option>40</option>
-              
-              
               <option>41</option>
             <option>42 </option>
             <option>43</option>
@@ -220,9 +218,6 @@ font-weight:300; color: #fff }
             <option>78</option>
             <option>79</option>
             <option>80</option>
-              
-              
-              
               <option>81</option>
             <option>82 </option>
             <option>83</option>
@@ -254,43 +249,7 @@ font-weight:300; color: #fff }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-      
-         
-           
-  <div class="input-group"><h4>
+     <div class="input-group"><h4>
       <input type="submit" name="submit" value="Go To Selected Prescription" class="sub"/>
       
            </h4>

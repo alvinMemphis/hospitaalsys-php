@@ -27,19 +27,19 @@ echo"</head>";
 $link ="<a href ='../plogin.php' class='b'>LOGIN</a>";
 
 if(isset($_POST['submit'])){
-require"connect.php";
 
-$uname = $_POST['uname'];
-$email= $_POST['email'];
-$password= $_POST['password'];
-$retypepassword= $_POST['retypepassword'];
-$age=$_POST['age'];
-//$gender =$_POST['gender'];
-
-
-$sql="INSERT INTO reg (uname,email,password,retypepassword,age)
-VALUES
-('$uname','$email','$password','$retypepassword','$age')";
+    require_once './registerUser.php';
+//$uname = $_POST['uname'];
+//$email= $_POST['email'];
+//$password= $_POST['password'];
+//$retypepassword= $_POST['retypepassword'];
+//$age=$_POST['age'];
+////$gender =$_POST['gender'];
+//
+//
+//$sql="INSERT INTO reg (uname,email,password,retypepassword,age)
+//VALUES
+//('$uname','$email','$password','$retypepassword','$age')";
 
 
 /*$sql="INSERT INTO  regdr (`uname`,`email`,`password`,`retypepassword`,`age`) 
@@ -47,19 +47,19 @@ VALUES ('$_POST[uname]','$_POST[email]','$_POST[password]','$_POST[retypepasswor
 )"; */
 
 
-if (!mysql_query($sql,$con))
- {
-  die('Error: '.mysql_error());
-  }
-    echo"Added";
-    include('adr.php'); /*
-    echo"<div class='input-group'>";
-    echo"THANK YOU ACCOUNT HAS BEEN CREATED CLICK TO LOGIN <br/>";
-echo "$link";
-   echo"</div>";
-   
-   */
-mysql_close($con);
+//if (!mysql_query($sql,$con))
+// {
+//  die('Error: '.mysql_error());
+//  }
+//    echo"Added";
+//    include('adr.php'); /*
+//    echo"<div class='input-group'>";
+//    echo"THANK YOU ACCOUNT HAS BEEN CREATED CLICK TO LOGIN <br/>";
+//echo "$link";
+//   echo"</div>";
+//
+//   */
+//mysql_close($con);
 
 
 }

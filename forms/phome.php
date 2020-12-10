@@ -47,7 +47,7 @@
         
         
         
-         <h2><span class='blue'>ONLINE </span>MEDICAL PRESCRIPTION ASSISTANT</h2><br/>
+         <h2><span class='blue'></span>MEDICAL PRESCRIPTION ASSISTANT</h2><br/>
         <h4>Patients Questioner</h4>
     
       <div class="input-group input-group-icon">
@@ -60,9 +60,9 @@
               <option>Malaria</option>
               <option>Tuberculosis </option>
             <option>Typhoid</option>
-             <option>Hepatics_B</option>  
+             <option>Hepatitis B</option>
                <option>Dysentery</option>
-               <option>Influencer </option>
+               <option>Influenza </option>
                <option>U.T.I</option>
                <option>Peptic_Ulcer</option>
                <option>Food_Poisoning</option>
